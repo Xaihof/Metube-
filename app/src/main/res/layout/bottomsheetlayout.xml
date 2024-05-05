@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="33dp"
+    app:cardPreventCornerOverlap="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/dialogbkg">
+
+        <ImageView
+            android:id="@+id/iv_knob"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/baseline_remove_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_cancel_button"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/baseline_clear_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_createText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="7dp"
+            android:text="Create"
+            android:textAlignment="viewStart"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_knob" />
+
+        <TextView
+            android:id="@+id/tv_upload_a_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:drawableStart="@drawable/baseline_video_library_24"
+            android:drawablePadding="14dp"
+            android:text="Upload a video"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toTopOf="@id/tv_create_a_short"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_createText" />
+
+        <TextView
+            android:id="@+id/tv_create_a_short"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:drawableStart="@drawable/baseline_whatshot_24"
+            android:drawablePadding="14dp"
+            android:text="Create a short"
+            android:textSize="21sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_go_live"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_upload_a_video" />
+
+        <TextView
+            android:id="@+id/tv_go_live"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="14dp"
+            android:drawableStart="@drawable/baseline_cast_connected_24"
+            android:drawablePadding="14dp"
+            android:text="Go live"
+            android:textSize="21sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_create_a_short" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
